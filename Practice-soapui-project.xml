@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="fbf79a83-fd04-4229-a62c-3dd19373fc58" activeEnvironment="Default" name="Practice" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="Users TestCase"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.5.0\bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="654c7e5b-d929-4e08-8355-5c0a3f1bfc2e" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://reqres.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="8fee37cf-37c4-4f27-b79d-c7c34f725441"><con:settings/><con:parameters><con:parameter><con:name>page</con:name><con:value>2</con:value><con:style>QUERY</con:style><con:default>2</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Users 1" id="f9112c4c-7157-4a7a-b317-e46708f5e289" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:request name="Request 1" id="32a314bc-ec9c-4688-a8e9-52db294e07e4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="4c9daa73-46fb-4272-8b72-e16e184ca05b" name="TestSuite"><con:description>TestSuite generated for REST Service [https://reqres.in]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="17fa618d-4618-4d18-8e81-449f61717a24" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Users TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Users] located at [/api/users]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="e98e7649-1bb7-4168-a5d6-dbc7fc87ac3a"><con:settings/><con:config service="https://reqres.in" resourcePath="/api/users" methodName="Users 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="32a314bc-ec9c-4688-a8e9-52db294e07e4" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="bcb016b3-3bd2-4c55-b023-3322f0b1d16b" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
